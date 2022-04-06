@@ -11,12 +11,29 @@
 </head>
 <body>
     <header class="cabecalho">
-        <button class="menu" aria-label="Menu">
-            <img src="images/menu.png" alt="menu">
-        </button>
         <div class="logo">
             <img src="images/logo.png" alt="logo">
             <p>OptimusTech</p>
+        </div>
+        <button class="menu" aria-label="Menu">
+            <img src="images/menu.png" alt="menu">
+        </button>
+
+        <div class="container__logo">
+            <img src="images/logo.png" alt="logo">
+            <p>OptimusTech</p>
+        </div>
+        <nav class="container__navegacao">
+            <ul class="container__links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Recursos</a></li>
+                <li><a href="#">Sobre nós</a></li>
+            </ul>
+        </nav>
+        <div class="container__botoes">
+            <button class="container--botaoentrar">Entrar</button>
+            <button class="container--botaocadastrar">Cadastrar</button>
         </div>
     </header>
     <nav class="menu__lateral menu__lateral--ativo">
@@ -27,12 +44,13 @@
         <button class="entrar">Entrar</button>
         <button class="cadastrar">Cadastrar</button>
     </nav>
+    
     <main>
-        <span class="container-superior">
+        <div class="container-superior">
             <h2>Sobre nós</h2>
             <h1>Por que somos diferentes?</h1>
             <p>Nós focamos nos detalhes de tudo que fazemos. Tudo para ajudar as empresas de todo o mundo a se concentrarem naquilo que é realmente importante para elas.</p>
-        </span>
+        </div>
         <section class="container">
             <section class="container-metricas">
                 <div class="metricas-projetos">
@@ -59,21 +77,82 @@
                 </div>
             </section>
         </section>
-        <section class="informacoes-topo">
-            <h2>Vagas abertas!</h2>
-            <h1>Estamos procurando por talentos</h1>
-            <p>Somos uma equipe 100% remota com pessoas do Brasil inteiro.</p>
-            <div class="informacoes-imagem">
+
+        <section class="informacoes">
+            <div class="informacoes--topo">
+                <h2>Vagas abertas!</h2>
+                <h1>Estamos procurando por talentos</h1>
+                <p>Somos uma equipe 100% remota com pessoas do Brasil inteiro.</p>
+            </div>
+            <div class="informacoes--imagem">
                 <picture>
-                    <source media="(min-width: 900px)" srcset="images/Image.png" type="image/png">
-                    <img src="images/Image-pequena2.png" alt="imagem">
+                    <source media="(max-width: 900px )" srcset="images/Image-pequena2.png" type="image/png">
+                    <img src="images/Image.png" alt="imagem">
                 </picture>
             </div>
+            <div class="informacoes--vagas">
+                <div class="vagas--design">
+                    <span class="area">Design</span>
+                    <div class="vaga--product">
+                        <span class="vaga--titulo">Product Designer</span>
+                        <div class="vaga--detalhes">
+                            <span class="vaga--time">Full-time</span>
+                            <span class="vaga--salario">Faixa salarial: R$7.000</span>
+                        </div>
+                    </div>
+                    <div class="vaga--ux">
+                        <span class="vaga--titulo">UX Designer</span>
+                        <div class="vaga--detalhes">
+                            <span class="vaga--time">Full-time</span>
+                            <span class="vaga--salario">Faixa salarial: R$6.000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="vagas--desenvolvedor">
+                    <span class="area">Desenvolvimento de Software</span>
+                    <div class="vaga--ios">
+                        <span class="vaga--titulo">Desenvolvedor(a) iOS</span>
+                        <div class="vaga--detalhes">
+                            <span class="vaga--time">Full-time</span>
+                            <span class="vaga--salario">Faixa salarial: R$8.000</span>
+                        </div>
+                    </div>
+                    <div class="vaga--front">
+                        <span class="vaga--titulo">Desenvolvedor(a) Front-end</span>
+                        <div class="vaga--detalhes">
+                            <span class="vaga--time">Full-time</span>
+                            <span class="vaga--salario">Faixa salarial: R$7.000</span>
+                        </div>
+                    </div>
+                    <div class="vaga--back">
+                        <span class="vaga--titulo">Desenvolvedor(a) Back-end</span>
+                        <div class="vaga--detalhes">
+                            <span class="vaga--time">Full-time</span>
+                            <span class="vaga--salario">Faixa salarial: R$8.000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        
+
+        <section class="opiniao">
+            <h2>Veja o que nossos colaboradores falam sobre nós</h2>
+            <h1>OptimusTech se importa com a saúde dos seus colaboradores e sempre procura nos dar todo tipo de auxílio possível</h1>
+            <img src="images/Avatar.png" alt="avatar">
+            <p class="name">Júlia Castro</p>
+            <p class="cargo">Desenvolvedora Web</p>
+        </section>
     </main>
     <footer>
-
+        <div class="texto">
+            <h1>Acompanhe as nossas oportunidades</h1>
+            <p>Seja o primeiro a saber quando novas vagas serão abertas!</p>
+        </div>
+        <div class="dados">
+            <input class="email" type="text" name="entrada" placeholder="Seu e-mail" required>
+            <button>Cadastrar</button>
+        </div>
+        <span class="direitos"> @ 2022 OptimusTech. Todos os direitos reservados.</span>
     </footer>
 
     <script src="index.js"></script>
