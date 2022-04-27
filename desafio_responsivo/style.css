@@ -344,74 +344,79 @@ body {
     font-weight: 400;
 }
 
+@media only screen and (min-width: 1200px) {
+
+
+.logo, .menu__lateral, .menu {
+    display: none;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    margin: 0px 112px;
+}
+
+.container__logo {
+    display: flex;
+    align-items: center;
+}
+
+.container__logo > img {
+    width: 27px;
+    height: 27px;
+}
+
+.container__logo > p {
+    color: var(--cor03);
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 35px;
+}
+
+.container__navegacao {
+    display: flex;
+}
+
+.container__links {
+    display: flex;
+    align-items: center;
+    margin-left: -220px;
+}
+
+.container__links > li > a {
+    color: var(--cor01);
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 16px;
+}
+
+.container__botoes {
+    display: flex;
+}
+
+.container--botaoentrar {
+    font-size: 16px;
+    color: var(--cor01);
+    border: none;
+    background: none;
+    margin-right: 30px;
+}
+
+.container--botaocadastrar {
+    font-size: 16px;
+    color: #ffffff;
+    background: var(--cor02);
+    padding: 10px 18px;
+    border: 1px solid var(--cor02);
+    border-radius: 8px;
+}
+}
+
 @media only screen and (min-width: 900px) {
 
-    .logo, .menu__lateral, .menu {
-        display: none;
-    }
-
-    .cabecalho {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 80px;
-        margin: 0px 112px;
-    }
-
-    .container__logo {
-        display: flex;
-        align-items: center;
-    }
-
-    .container__logo > img {
-        width: 27px;
-        height: 27px;
-    }
-
-    .container__logo > p {
-        color: var(--cor03);
-        font-size: 16px;
-        font-weight: 500;
-        padding-left: 35px;
-    }
-
-    .container__navegacao {
-        display: flex;
-    }
-
-    .container__links {
-        display: flex;
-        align-items: center;
-        margin-left: -220px;
-    }
-
-    .container__links > li > a {
-        color: var(--cor01);
-        font-size: 16px;
-        font-weight: 500;
-        margin-right: 16px;
-    }
-
-    .container__botoes {
-        display: flex;
-    }
-
-    .container--botaoentrar {
-        font-size: 16px;
-        color: var(--cor01);
-        border: none;
-        background: none;
-        margin-right: 30px;
-    }
-
-    .container--botaocadastrar {
-        font-size: 16px;
-        color: #ffffff;
-        background: var(--cor02);
-        padding: 10px 18px;
-        border: 1px solid var(--cor02);
-        border-radius: 8px;
-    }
 
     .conteudo-superior, .informacoes--topo {
         height: 407px;
